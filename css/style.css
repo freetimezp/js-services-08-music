@@ -1,0 +1,56 @@
+
+/* # fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+/* # variables */
+:root{
+  --main-color: hsl(345, 90%, 60%);
+
+  /* text colors */
+  --text-dark-gray: hsl(0, 0%, 25%);
+  --text-x-dark-gray: hsl(0, 0%, 10%);
+  --text-black: hsl(0, 0%, 0%);
+
+  /* bg colors */
+  --bg-light-yellow: hsl(42, 26%, 77%);
+  --bg-x-light-yellow: hsl(42, 40%, 87%);
+  --bg-green: hsl(167, 57%, 52%);
+  --bg-purple: hsl(253, 79%, 77%);
+
+  /* border colors */
+  --border-dark: hsla(0, 0%, 0%, 0.1);
+  --border-x-dark: hsla(0, 0%, 0%, 0.7);
+
+  /* font family */
+  --ff-carter-one: 'Carter One', cursive;
+
+  /* font size */
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+  --fs-2xl: 28px;
+  --fs-3xl: clamp(27px, 4vw, 50px);
+  --fs-4xl: clamp(35px, 7vw, 90px);
+  --fs-body: var(--fs-md);
+
+  /* padding */
+  --section-py: 80px;
+}
+/* # base */
+/* # page wrapper */
+/* # container */
+/* # section header */
+/* # aos */
+/* # text animation */
+/* # btn */
+/* # preloader */
+/* # header */
+/* # home */
+/* # about */
+/* # performers */
+/* # schedule */
+/* # sponsors */
+/* # pricing */
+/* # contact */
+/* # footer */
