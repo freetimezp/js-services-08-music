@@ -203,6 +203,77 @@ button {
 .header-menu a:hover {
   color: var(--main-color);
 }
+
+@media (max-width: 991px) {
+  .header {
+    padding: 12px 0;
+  }
+  .header-toggler {
+    height: 34px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    z-index: 1;
+    background-color: transparent;
+  }
+  .header-toggler span {
+    height: 2px;
+    width: 80%;
+    background-color: var(--main-color);
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .header-toggler span::before,
+  .header-toggler span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+    transition: all 0.3s ease;
+  }
+  .header-toggler span::before {
+    transform: translateY(-8px);
+  }
+  .header-toggler span::after {
+    transform: translateY(8px);
+  }
+  .header-toggler.active span {
+    background-color: transparent;
+  }
+  .header-toggler.active span::before {
+    transform: rotate(45deg);
+  }
+  .header-toggler.active span::after {
+    transform: rotate(-45deg);
+  }
+  .header-menu {
+    position: fixed;
+    width: 250px;
+    background-color: var(--bg-light-yellow);
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 60px 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+  }
+  .header-menu.open {
+    transform: translateX(0);
+  }
+  .header-menu li {
+    display: block;
+    margin: 0;
+  }
+  .header-menu a {
+    padding: 8px 15px;
+  }
+}
+
 /* # home */
 .home {
   padding: 180px 0 120px;

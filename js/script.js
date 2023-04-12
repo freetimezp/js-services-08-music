@@ -15,5 +15,21 @@ function scheduleTabs() {
         });
     });
 }
-
 scheduleTabs();
+
+/* header menu */
+function headerMenu() {
+    const toggler = document.querySelector(".js-header-toggler");
+    const menu = document.querySelector(".js-header-menu");
+    const items = menu.querySelectorAll("li");
+
+    const menuToggle = () => {
+        menu.classList.toggle("open");
+        toggler.classList.toggle("active");
+    }
+
+    toggler.addEventListener("click", menuToggle);
+}
+headerMenu();
+
+
