@@ -420,6 +420,25 @@ button {
   border-radius: 50%;
 }
 /* # sponsors */
+.sponsors {
+  padding: var(--section-py) 0;
+}
+.sponsors-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.sponsors-item {
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-x-dark);
+  transition: all 0.5s ease;
+}
+.sponsors-item:hover {
+  transform: translateY(-4px) rotate(-2deg);
+}
 /* # pricing */
 /* # contact */
 /* # footer */
