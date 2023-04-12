@@ -38,6 +38,20 @@
   --section-py: 80px;
 }
 
+@media (max-width: 991px) {
+  :root {
+    --fs-2xl: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --fs-lg: 16px;
+    --fs-xl: 20px;
+    --section-py: 50px;
+  }
+}
+
 /* # base */
 html {
   scroll-behavior: smooth;
@@ -126,6 +140,13 @@ button {
   text-transform: capitalize;
   font-family: var(--ff-carter-one);
 }
+
+@media (max-width: 767px) {
+  .section-header {
+    margin-bottom: 45px;
+  }
+}
+
 /* # aos */
 /* # text animation */
 /* # btn */
@@ -334,6 +355,48 @@ button {
   bottom: 0;
   transform: translate(20%, 20%);
 }
+
+@media (max-width: 991px) {
+  .home {
+    padding: 140px 0 80px;
+  }
+  .home-box {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home {
+    padding: 140px 0 60px;
+  }
+  .home-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 80px;
+  }
+  .home-right {
+    order: -1;
+  }
+  .home-box {
+    height: 320px;
+  }
+  .home-img-box1 {
+    max-width: 200px;
+  }
+  .home-img-box2 {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-box {
+    height: 250px;
+    max-width: 220px;
+  }
+  .home-img-box1,
+  .home-img-box2 {
+    max-width: 150px;
+  }
+}
 /* # about */
 .about {
   padding: var(--section-py) 0;
@@ -379,6 +442,25 @@ button {
 .about-btn {
   margin-top: 30px;
 }
+
+@media (max-width: 991px) {
+  .about-img-box {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .section-header {
+    grid-column: 1 / 2;
+  }
+  .about-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-img-box {
+    margin: 50px auto 70px;
+  }
+}
+
 /* # performers */
 .performers {
   padding: var(--section-py) 0;
@@ -424,6 +506,17 @@ button {
   text-transform: capitalize;
   margin-top: 4px;
 }
+
+@media (max-width: 575px) {
+  .performers-items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .performers-item:nth-child(even) {
+    margin-top: 0;
+  }
+}
+
 /* # schedule */
 .schedule {
   padding: var(--section-py) 0;
@@ -437,7 +530,7 @@ button {
   border-radius: 5px;
   padding: 5px 30px;
   color: var(--text-black);
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin: 0 5px 10px;
   font-size: var(--fs-body);
   font-weight: 500;
@@ -490,6 +583,14 @@ button {
   max-width: 50px;
   border-radius: 50%;
 }
+
+@media (max-width: 575px) {
+  .schedule-table td,
+  .schedule-table th {
+    font-size: 13px;
+  }
+}
+
 /* # sponsors */
 .sponsors {
   padding: var(--section-py) 0;
@@ -510,6 +611,19 @@ button {
 .sponsors-item:hover {
   transform: translateY(-4px) rotate(-2deg);
 }
+
+@media (max-width: 991px) {
+  .sponsors-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .sponsors-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* # pricing */
 .pricing {
   padding: var(--section-py) 0;
@@ -586,6 +700,17 @@ button {
 .pricing-card .btn {
   margin-top: 20px;
 }
+
+@media (max-width: 767px) {
+  .pricing-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+  }
+  .pricing-card:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
 /* # contact */
 .contact {
   padding: var(--section-py) 0;
@@ -649,6 +774,20 @@ button {
   height: 120px;
   resize: none;
 }
+
+@media (max-width: 767px) {
+  .contact-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-form .col-2{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
 /* # footer */
 .footer {
   border-top: 1px solid var(--border-dark);
@@ -679,4 +818,10 @@ button {
 .footer-social a:hover {
   background-color: var(--main-color);
   color: #fff;
+}
+
+@media (max-width: 575px) {
+  .footer-container {
+    justify-content: center;
+  }
 }

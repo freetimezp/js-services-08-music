@@ -29,6 +29,14 @@ function headerMenu() {
     }
 
     toggler.addEventListener("click", menuToggle);
+
+    items.forEach((item) => {
+        item.querySelector("a").addEventListener("click", () => {
+            if(window.innerWidth <= 991) {
+                menuToggle();
+            }
+        });
+    });
 }
 headerMenu();
 
