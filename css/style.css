@@ -61,7 +61,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.5;
+  line-height: 1.2;
   color: var(--text-x-dark-gray);
 }
 
@@ -115,6 +115,17 @@ button {
   padding: 0 15px;
 }
 /* # section header */
+.section-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.section-header-title {
+  font-size: var(--fs-3xl);
+  font-weight: 600;
+  color: var(--text-x-dark-gray);
+  text-transform: capitalize;
+  font-family: var(--ff-carter-one);
+}
 /* # aos */
 /* # text animation */
 /* # btn */
@@ -253,6 +264,50 @@ button {
   transform: translate(20%, 20%);
 }
 /* # about */
+.about {
+  padding: var(--section-py) 0;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 30px;
+}
+.about .section-header {
+  grid-column: 2 / 3;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.about-img-box {
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+}
+.about-img-box img {
+  filter: grayscale(1);
+}
+.about-img-box:hover img {
+  filter: grayscale(0);
+}
+.about-decor1,
+.about-decor2 {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  z-index: -1;
+}
+.about-decor1 {
+  background-color: var(--bg-purple);
+  left: -40px;
+  top: -40px;
+}
+.about-decor2 {
+  background-color: var(--bg-green);
+  right: -40px;
+  bottom: -40px;
+}
+.about-btn {
+  margin-top: 30px;
+}
 /* # performers */
 /* # schedule */
 /* # sponsors */
