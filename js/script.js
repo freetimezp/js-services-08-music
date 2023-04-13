@@ -40,4 +40,16 @@ function headerMenu() {
 }
 headerMenu();
 
+/* animation */
+window.addEventListener("load", () => {
+    AOS.init({
+        duration: 1200,
+        easing: 'ease-in-out-cubic',
+        once: true
+    });
+});
+
+Splitting();
+
+
 
